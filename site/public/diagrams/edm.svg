@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="340" fill="#f6f8fb"/>
+  <!-- 上导丝轮 -->
+  <circle cx="240" cy="70" r="16" fill="#7c8ea3"/>
+  <circle cx="440" cy="70" r="16" fill="#7c8ea3"/>
+  <!-- 电极丝 -->
+  <line x1="240" y1="86" x2="240" y2="270" stroke="#1f6feb" stroke-width="2.5"/>
+  <line x1="440" y1="86" x2="440" y2="270" stroke="#1f6feb" stroke-width="2.5"/>
+  <text x="340" y="55" text-anchor="middle" font-size="13" fill="#1450b0">电极丝 (钼丝/黄铜丝)</text>
+  <!-- 工件 (被切材料) -->
+  <rect x="200" y="150" width="280" height="90" fill="#cdd9e6" stroke="#5b6b7b" stroke-width="2"/>
+  <text x="340" y="200" text-anchor="middle" font-size="14" fill="#33414f">导电工件</text>
+  <!-- 切缝 -->
+  <rect x="336" y="150" width="8" height="90" fill="#f6f8fb"/>
+  <!-- 火花 -->
+  <g fill="#f0a93b">
+    <circle cx="338" cy="180" r="3"/>
+    <circle cx="342" cy="205" r="2.5"/>
+    <circle cx="337" cy="225" r="2.5"/>
+  </g>
+  <text x="338" y="245" text-anchor="middle" font-size="12" fill="#b8791b">放电蚀除</text>
+  <!-- 介质液 -->
+  <text x="540" y="160" font-size="14" fill="#33414f">原理：脉冲放电</text>
+  <text x="540" y="182" font-size="14" fill="#33414f">蚀除导电材料，</text>
+  <text x="540" y="204" font-size="14" fill="#33414f">切口极窄、无切削力</text>
+  <text x="540" y="232" font-size="12" fill="#6b7884">适用：硬质合金、</text>
+  <text x="540" y="250" font-size="12" fill="#6b7884">模具钢、复杂轮廓</text>
+</svg>

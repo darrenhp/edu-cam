@@ -1,0 +1,8 @@
+# 依赖与构建产物（由 CI 重新生成，无需入库）
+site/node_modules/
+site/dist/
+.DS_Store
+*.log
+
+# 本地 agent 工作记忆，不入库
+.workbuddy/

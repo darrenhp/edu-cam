@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="300" fill="#f6f8fb"/>
+  <!-- 名义尺寸 -->
+  <line x1="120" y1="80" x2="560" y2="80" stroke="#33414f" stroke-width="2"/>
+  <text x="100" y="84" text-anchor="end" font-size="14" fill="#33414f">Ø30</text>
+  <!-- 上偏差 -->
+  <line x1="120" y1="120" x2="560" y2="120" stroke="#1f6feb" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="575" y="124" font-size="12" fill="#1450b0">上偏差 +0.021</text>
+  <!-- 下偏差 -->
+  <line x1="120" y1="160" x2="560" y2="160" stroke="#1f6feb" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="575" y="164" font-size="12" fill="#1450b0">下偏差 0</text>
+  <!-- 公差带填充 -->
+  <rect x="120" y="120" width="440" height="40" fill="#e7f0ff"/>
+  <text x="340" y="145" text-anchor="middle" font-size="13" fill="#1450b0">公差带 = 0.021 mm</text>
+  <!-- 实际尺寸点 -->
+  <circle cx="300" cy="135" r="4" fill="#0f9d8a"/>
+  <circle cx="420" cy="148" r="4" fill="#0f9d8a"/>
+  <text x="310" y="132" font-size="11" fill="#0f9d8a">实测值</text>
+  <!-- IT 等级 -->
+  <text x="120" y="220" font-size="14" fill="#33414f">IT 等级：ISO 286 将公差分为 IT01–IT18</text>
+  <text x="120" y="244" font-size="13" fill="#6b7884">数值越小精度越高；同一基本尺寸下，IT6 公差远小于 IT11</text>
+  <!-- 表面粗糙度 -->
+  <path d="M120 265 q20 -10 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#b8791b" stroke-width="2"/>
+  <text x="120" y="290" font-size="12" fill="#b8791b">表面粗糙度 Ra（轮廓算术平均偏差，单位 μm）</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="340" fill="#f6f8fb"/>
+  <!-- 主轴/卡盘 -->
+  <rect x="60" y="140" width="40" height="80" rx="6" fill="#7c8ea3"/>
+  <circle cx="100" cy="180" r="46" fill="#cdd9e6" stroke="#5b6b7b" stroke-width="2"/>
+  <circle cx="100" cy="180" r="10" fill="#5b6b7b"/>
+  <text x="100" y="250" text-anchor="middle" font-size="13" fill="#33414f">主轴卡盘(旋转)</text>
+  <!-- 工件圆柱 -->
+  <rect x="146" y="166" width="300" height="28" rx="14" fill="#9fb3c8" stroke="#5b6b7b" stroke-width="2"/>
+  <text x="296" y="161" text-anchor="middle" font-size="13" fill="#33414f">旋转工件</text>
+  <!-- 旋转箭头 -->
+  <path d="M100 110 a70 70 0 0 1 60 -40" fill="none" stroke="#1f6feb" stroke-width="2"/>
+  <polygon points="160,70 168,76 162,84" fill="#1f6feb"/>
+  <!-- 刀具 (静止) -->
+  <g transform="translate(470,150)">
+    <rect x="-10" y="-30" width="20" height="60" fill="#b8791b"/>
+    <polygon points="-10,30 10,30 0,48" fill="#8a5a12"/>
+    <text x="0" y="-38" text-anchor="middle" font-size="13" fill="#b8791b">车刀(静止)</text>
+  </g>
+  <!-- 进给 -->
+  <g stroke="#0f9d8a" stroke-width="2" fill="#0f9d8a">
+    <line x1="430" y1="240" x2="430" y2="280"/>
+    <polygon points="430,280 426,272 434,272"/>
+    <text x="438" y="276" font-size="12" stroke="none">进给</text>
+  </g>
+  <!-- 切屑 -->
+  <path d="M462 196 q-6 18 8 26 q-2 -16 8 -22" fill="#f0a93b"/>
+  <text x="540" y="150" font-size="14" fill="#33414f">原理：工件旋转，</text>
+  <text x="540" y="172" font-size="14" fill="#33414f">刀具沿半径/轴向</text>
+  <text x="540" y="194" font-size="14" fill="#33414f">进给切削外圆/内孔</text>
+</svg>

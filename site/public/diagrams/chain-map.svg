@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 560" font-family="-apple-system,'PingFang SC',sans-serif">
+  <style>
+    .node rect{ transition:.15s; cursor:pointer; }
+    .node:hover rect{ stroke-width:3; filter:drop-shadow(0 2px 6px rgba(31,111,235,.35)); }
+    .node:hover text.lbl{ font-weight:700; }
+    .flow{ stroke:#9aa7b4; stroke-width:1.6; fill:none; }
+    .grp-title{ font-size:15px; font-weight:700; fill:#33414f; }
+    .legend{ font-size:12px; fill:#6b7884; }
+    .node text.lbl{ font-size:13px; fill:#1c2733; }
+    .node text.sub{ font-size:10.5px; fill:#6b7884; }
+  </style>
+  <rect width="980" height="560" fill="#f6f8fb"/>
+
+  <text x="40" y="34" class="grp-title">上游 · 装备与要素供给</text>
+  <text x="400" y="34" class="grp-title">中游 · 加工服务</text>
+  <text x="760" y="34" class="grp-title">下游 · 应用行业</text>
+
+  <!-- 上游节点 -->
+  <g class="node"><rect x="30" y="60" width="150" height="46" rx="8" fill="#e7f0ff" stroke="#1f6feb"/><text x="105" y="82" text-anchor="middle" class="lbl">机床制造商</text><text x="105" y="98" text-anchor="middle" class="sub">德/日/瑞/台/大陆</text><title>机床制造商：五轴/车铣复合/精密机床（DMG MORI、马扎克、格劳博等类别）</title></g>
+  <g class="node"><rect x="30" y="120" width="150" height="46" rx="8" fill="#e7f0ff" stroke="#1f6feb"/><text x="105" y="142" text-anchor="middle" class="lbl">CNC 数控系统</text><text x="105" y="158" text-anchor="middle" class="sub">西门子/发那科/海德汉</text><title>CNC 数控系统：机床的"大脑"，决定运动控制能力</title></g>
+  <g class="node"><rect x="30" y="180" width="150" height="46" rx="8" fill="#e7f0ff" stroke="#1f6feb"/><text x="105" y="202" text-anchor="middle" class="lbl">CAM/CAD 软件</text><text x="105" y="218" text-anchor="middle" class="sub">Mastercam/ Fusion/ NX</text><title>CAM/CAD 软件：工艺与刀路编程工具</title></g>
+  <g class="node"><rect x="30" y="240" width="150" height="46" rx="8" fill="#e7f0ff" stroke="#1f6feb"/><text x="105" y="262" text-anchor="middle" class="lbl">刀具与刀柄</text><text x="105" y="278" text-anchor="middle" class="sub">山特维克/肯纳等</text><title>刀具与刀柄：切削执行单元，决定效率与质量</title></g>
+  <g class="node"><rect x="30" y="300" width="150" height="46" rx="8" fill="#e7f0ff" stroke="#1f6feb"/><text x="105" y="322" text-anchor="middle" class="lbl">材料与合金</text><text x="105" y="338" text-anchor="middle" class="sub">特种钢/钛/铝/复材</text><title>原材料与特种合金：被加工对象的起点</title></g>
+  <g class="node"><rect x="30" y="360" width="150" height="46" rx="8" fill="#e7f0ff" stroke="#1f6feb"/><text x="105" y="382" text-anchor="middle" class="lbl">计量检测设备</text><text x="105" y="398" text-anchor="middle" class="sub">三坐标/在机测量</text><title>计量检测设备：质量保障的硬件基础</title></g>
+
+  <!-- 中游节点 -->
+  <g class="node"><rect x="410" y="190" width="170" height="60" rx="10" fill="#e6f7f3" stroke="#0f9d8a"/><text x="495" y="214" text-anchor="middle" class="lbl">加工服务商</text><text x="495" y="232" text-anchor="middle" class="sub">自有品牌厂 / 代工厂</text><text x="495" y="246" text-anchor="middle" class="sub">/ 快速成型服务</text><title>中游：把上游要素转化为零件/组件，是价值转化的核心环节</title></g>
+
+  <!-- 下游节点 -->
+  <g class="node"><rect x="770" y="60" width="170" height="40" rx="8" fill="#fdf0e0" stroke="#b8791b"/><text x="855" y="85" text-anchor="middle" class="lbl">航空航天</text><title>下游：飞机发动机叶片、结构件等高价值精密件</title></g>
+  <g class="node"><rect x="770" y="115" width="170" height="40" rx="8" fill="#fdf0e0" stroke="#b8791b"/><text x="855" y="140" text-anchor="middle" class="lbl">医疗器械</text><title>下游：植入物、手术器械，洁净与生物相容要求高</title></g>
+  <g class="node"><rect x="770" y="170" width="170" height="40" rx="8" fill="#fdf0e0" stroke="#b8791b"/><text x="855" y="195" text-anchor="middle" class="lbl">半导体设备零部件</text><title>下游：高洁净、超高精度零部件</title></g>
+  <g class="node"><rect x="770" y="225" width="170" height="40" rx="8" fill="#fdf0e0" stroke="#b8791b"/><text x="855" y="250" text-anchor="middle" class="lbl">汽车（含新能源三电）</text><title>下游：电机壳、电控结构件等，批量大</title></g>
+  <g class="node"><rect x="770" y="280" width="170" height="40" rx="8" fill="#fdf0e0" stroke="#b8791b"/><text x="855" y="305" text-anchor="middle" class="lbl">模具</text><title>下游：注塑模/冲压模，型腔复杂</title></g>
+  <g class="node"><rect x="770" y="335" width="170" height="40" rx="8" fill="#fdf0e0" stroke="#b8791b"/><text x="855" y="360" text-anchor="middle" class="lbl">消费电子</text><title>下游：金属机身、精密结构件，外观与精度并重</title></g>
+
+  <!-- 物料/设备流：上游 -> 中游 -->
+  <g class="flow">
+    <path d="M180 90 C300 120 320 180 405 205"/>
+    <path d="M180 150 C300 160 320 190 405 210"/>
+    <path d="M180 210 C300 200 320 195 405 215"/>
+    <path d="M180 270 C300 240 320 200 405 220"/>
+    <path d="M180 330 C300 280 320 205 405 225"/>
+    <path d="M180 390 C300 320 320 210 405 230"/>
+  </g>
+  <text x="290" y="170" class="legend">设备 / 材料 / 软件 流入</text>
+
+  <!-- 零件流：中游 -> 下游 -->
+  <g class="flow">
+    <path d="M580 210 C680 180 700 80 768 85"/>
+    <path d="M580 215 C680 200 700 135 768 140"/>
+    <path d="M580 220 C680 220 700 190 768 195"/>
+    <path d="M580 225 C680 240 700 245 768 250"/>
+    <path d="M580 230 C680 260 700 300 768 305"/>
+    <path d="M580 235 C680 280 700 355 768 360"/>
+  </g>
+  <text x="640" y="200" class="legend">零件 / 组件 流出</text>
+
+  <!-- 资金/订单流：下游 -> 中游 -> 上游 -->
+  <path d="M768 255 C680 290 620 260 585 245" class="flow" stroke="#b8791b"/>
+  <path d="M405 250 C320 320 280 300 185 330" class="flow" stroke="#b8791b"/>
+  <text x="610" y="300" class="legend" fill="#b8791b">订单 / 资金 回流</text>
+
+  <!-- 需求反馈：下游 -> 上游（虚线） -->
+  <path d="M768 375 C500 460 300 420 185 386" class="flow" stroke="#9aa7b4" stroke-dasharray="5 4"/>
+  <text x="430" y="445" class="legend">需求与技术反馈（ dashed ）</text>
+</svg>

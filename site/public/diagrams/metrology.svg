@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="320" fill="#f6f8fb"/>
+  <!-- 花岗岩台面 -->
+  <rect x="80" y="240" width="420" height="20" fill="#9fb3c8" stroke="#5b6b7b" stroke-width="2"/>
+  <text x="290" y="278" text-anchor="middle" font-size="12" fill="#33414f">花岗岩台面</text>
+  <!-- 工件 -->
+  <rect x="240" y="200" width="120" height="40" fill="#cdd9e6" stroke="#5b6b7b" stroke-width="2"/>
+  <text x="300" y="225" text-anchor="middle" font-size="12" fill="#33414f">工件</text>
+  <!-- 测头臂 -->
+  <line x1="300" y1="60" x2="300" y2="190" stroke="#7c8ea3" stroke-width="6"/>
+  <circle cx="300" cy="195" r="6" fill="#1f6feb"/>
+  <text x="300" y="50" text-anchor="middle" font-size="12" fill="#1450b0">测头(红宝石球)</text>
+  <!-- 三轴标尺 -->
+  <g stroke="#9aa7b4" stroke-width="1.5" font-size="12" fill="#6b7884">
+    <line x1="80" y1="240" x2="80" y2="120"/>
+    <line x1="500" y1="240" x2="500" y2="120"/>
+    <text x="64" y="180">Z</text>
+    <text x="512" y="180">Y</text>
+  </g>
+  <text x="540" y="150" font-size="14" fill="#33414f">三坐标测量机</text>
+  <text x="540" y="172" font-size="13" fill="#33414f">(CMM)：触针逐点</text>
+  <text x="540" y="194" font-size="13" fill="#33414f">采样，比对理论</text>
+  <text x="540" y="216" font-size="13" fill="#33414f">模型得偏差</text>
+  <text x="540" y="246" font-size="11" fill="#6b7884">另有光学/在机</text>
+  <text x="540" y="262" font-size="11" fill="#6b7884">测量等</text>
+</svg>

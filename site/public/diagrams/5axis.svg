@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="360" fill="#f6f8fb"/>
+  <!-- 转台 (A轴倾斜) -->
+  <g transform="translate(300,230) rotate(-20)">
+    <rect x="-90" y="-14" width="180" height="28" rx="6" fill="#7c8ea3"/>
+    <rect x="-70" y="-50" width="140" height="40" rx="8" fill="#cdd9e6" stroke="#5b6b7b" stroke-width="2"/>
+    <text x="0" y="-56" text-anchor="middle" font-size="13" fill="#33414f">工件</text>
+  </g>
+  <!-- 旋转轴标注 -->
+  <g stroke="#9aa7b4" stroke-width="1.5" fill="#6b7884" font-size="12">
+    <line x1="300" y1="230" x2="300" y2="300"/>
+    <text x="306" y="300">A 轴(摆动)</text>
+  </g>
+  <!-- 刀具 倾斜接近 -->
+  <g transform="translate(300,90) rotate(25)">
+    <rect x="-12" y="0" width="24" height="80" rx="4" fill="#5b6b7b"/>
+    <g stroke="#39506b" stroke-width="2">
+      <path d="M-12 8 q8 14 0 28 q-8 14 0 28"/>
+      <path d="M12 8 q-8 14 0 28 q8 14 0 28"/>
+    </g>
+    <text x="0" y="-14" text-anchor="middle" font-size="13" fill="#1450b0">刀具(刀轴可摆)</text>
+  </g>
+  <!-- C 轴(转台旋转) -->
+  <ellipse cx="300" cy="248" rx="92" ry="22" fill="none" stroke="#0f9d8a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="400" y="262" font-size="12" fill="#0f9d8a">C 轴(回转)</text>
+  <!-- 刀轴矢量 -->
+  <g stroke="#b8791b" stroke-width="2">
+    <line x1="300" y1="170" x2="300" y2="120"/>
+    <text x="306" y="118" font-size="12" fill="#b8791b">刀轴矢量 I/J/K</text>
+  </g>
+  <text x="470" y="120" font-size="14" fill="#33414f">5 轴 = 3 直线轴</text>
+  <text x="470" y="142" font-size="14" fill="#33414f">+ 2 旋转轴(A/C)</text>
+  <text x="470" y="170" font-size="13" fill="#6b7884">刀轴可随曲面</text>
+  <text x="470" y="190" font-size="13" fill="#6b7884">实时取向，</text>
+  <text x="470" y="210" font-size="13" fill="#6b7884">一次装夹多面</text>
+</svg>
