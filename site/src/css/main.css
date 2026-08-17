@@ -112,13 +112,27 @@ a:hover { text-decoration: underline; }
   max-height: calc(100vh - 100px); overflow: auto;
   box-shadow: var(--shadow-sm);
 }
-.side-group { margin-bottom: var(--sp-4); }
-.side-group-title {
-  display: block; font-weight: 700; font-size: 14px; color: var(--c-ink);
+.side-group { margin-bottom: var(--sp-3); }
+.side-group-head {
+  display: flex; align-items: center; gap: 4px;
   margin-bottom: var(--sp-2); padding-bottom: var(--sp-1);
   border-bottom: 1px solid var(--c-line);
 }
-.side-nav ul { list-style: none; margin: 0; padding: 0; }
+.side-group-toggle {
+  flex: none; background: none; border: none; cursor: pointer;
+  color: var(--c-ink-3); font-size: 11px; line-height: 1;
+  padding: 3px 5px; border-radius: 4px;
+  transition: transform .15s ease, background .15s ease;
+}
+.side-group-toggle:hover { background: var(--c-surface-2); color: var(--c-ink-2); }
+.side-group:not(.open) .side-group-toggle { transform: rotate(-90deg); }
+.side-group-title {
+  flex: 1; font-weight: 700; font-size: 14px; color: var(--c-ink);
+  padding-bottom: 0; border-bottom: none;
+}
+.side-group-title.active { color: var(--c-primary); }
+.side-group-list { list-style: none; margin: 0; padding: 0; }
+.side-group:not(.open) .side-group-list { display: none; }
 .side-link {
   display: block; padding: 5px 10px; border-radius: var(--radius-sm);
   color: var(--c-ink-2); font-size: 13.5px; border-left: 2px solid transparent;

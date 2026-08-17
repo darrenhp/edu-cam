@@ -4,6 +4,23 @@ function toggleMenu() {
   if (nav) nav.classList.toggle('open');
 }
 
+// 侧边栏板块分组折叠/展开（仅当前所在板块默认展开）
+window.toggleSideGroup = function (btn) {
+  var group = btn.closest('.side-group');
+  if (!group) return;
+  var open = group.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+};
+
+// 自动定位：将当前页/当前板块滚动到侧栏可视区域
+(function () {
+  var active = document.querySelector('.side-nav .side-link.active') ||
+               document.querySelector('.side-nav .side-group-title.active');
+  if (active) {
+    try { active.scrollIntoView({ block: 'nearest' }); } catch (e) {}
+  }
+})();
+
 // 站内搜索（基于构建期生成的 search-index.json）
 (function () {
   var input = document.getElementById('search-input');

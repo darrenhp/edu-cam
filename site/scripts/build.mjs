@@ -96,10 +96,18 @@ function buildSidebar(activeUrl) {
   let html = '<nav class="side-nav" aria-label="板块导航">';
   for (const s of SECTIONS) {
     const sp = pagesBySection[s.key] || [];
-    html += `<div class="side-group">
-      <a class="side-group-title" href="/${s.key}/index.html">${s.icon} ${s.title}</a>`;
+    const isIndex = activeUrl === `/${s.key}/index.html`;
+    const containsActive = sp.some(p => p.url === activeUrl);
+    const isActiveSection = isIndex || containsActive;
+    const groupCls = 'side-group' + (isActiveSection ? ' open' : '');
+    const titleActive = isIndex ? ' active' : '';
+    html += `<div class="${groupCls}" data-section="${s.key}">
+      <div class="side-group-head">
+        <button class="side-group-toggle" type="button" aria-label="展开或收起该板块" aria-expanded="${isActiveSection ? 'true' : 'false'}" onclick="toggleSideGroup(this)">▾</button>
+        <a class="side-group-title${titleActive}" href="/${s.key}/index.html">${s.icon} ${s.title}</a>
+      </div>`;
     if (sp.length) {
-      html += '<ul>';
+      html += '<ul class="side-group-list">';
       for (const p of sp) {
         const active = p.url === activeUrl ? ' active' : '';
         html += `<li><a class="side-link${active}" href="${p.url}">${p.title}</a></li>`;
@@ -177,6 +185,7 @@ function layout({ title, sectionKey, activeUrl, content, updated, sources, summa
 <title>${title} · CAM精密加工知识库</title>
 <meta name="description" content="${summary || title}">
 <link rel="stylesheet" href="/assets/main.css">
+<noscript><style>.side-group:not(.open) .side-group-list{display:block!important}</style></noscript>
 </head>
 <body>
 <header class="site-header">
