@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="340" fill="#f6f8fb"/>
+  <!-- 壳体 -->
+  <g transform="translate(120,170)">
+    <rect x="-60" y="-40" width="120" height="80" rx="8" fill="#cdd9e6" stroke="#7c8ea3" stroke-width="2"/>
+    <rect x="-30" y="-18" width="60" height="36" rx="4" fill="#f6f8fb" stroke="#7c8ea3" stroke-width="1.5"/>
+    <circle cx="-35" cy="-25" r="5" fill="#f6f8fb" stroke="#7c8ea3" stroke-width="1.5"/>
+    <circle cx="35" cy="-25" r="5" fill="#f6f8fb" stroke="#7c8ea3" stroke-width="1.5"/>
+    <circle cx="-35" cy="25" r="5" fill="#f6f8fb" stroke="#7c8ea3" stroke-width="1.5"/>
+    <circle cx="35" cy="25" r="5" fill="#f6f8fb" stroke="#7c8ea3" stroke-width="1.5"/>
+    <text x="0" y="78" font-size="12" fill="#33414f">新能源三电壳体</text>
+  </g>
+  <!-- 工艺路线 -->
+  <g font-size="12" fill="#33414f">
+    <rect x="300" y="55" width="160" height="40" rx="6" fill="#e6edf4" stroke="#7c8ea3"/>
+    <text x="380" y="79" text-anchor="middle">① 压铸/铸件</text>
+    <rect x="300" y="125" width="160" height="40" rx="6" fill="#e6edf4" stroke="#7c8ea3"/>
+    <text x="380" y="149" text-anchor="middle">② 大面铣 + 粗加工</text>
+    <rect x="300" y="195" width="160" height="40" rx="6" fill="#e6edf4" stroke="#7c8ea3"/>
+    <text x="380" y="219" text-anchor="middle">③ 孔系/螺纹(多轴)</text>
+    <rect x="300" y="265" width="160" height="40" rx="6" fill="#e6edf4" stroke="#7c8ea3"/>
+    <text x="380" y="289" text-anchor="middle">④ 清洗 + 在线检测</text>
+  </g>
+  <g stroke="#0f9d8a" stroke-width="2" fill="none">
+    <line x1="380" y1="95" x2="380" y2="123"/>
+    <line x1="380" y1="165" x2="380" y2="193"/>
+    <line x1="380" y1="235" x2="380" y2="263"/>
+    <polygon points="380,123 376,115 384,115" fill="#0f9d8a"/>
+    <polygon points="380,193 376,185 384,185" fill="#0f9d8a"/>
+    <polygon points="380,263 376,255 384,255" fill="#0f9d8a"/>
+  </g>
+  <text x="500" y="165" font-size="12" fill="#6b7884">难点：薄壁变形、</text>
+  <text x="500" y="185" font-size="12" fill="#6b7884">孔位精度、</text>
+  <text x="500" y="205" font-size="12" fill="#6b7884">批量一致性</text>
+</svg>

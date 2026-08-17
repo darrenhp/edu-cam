@@ -24,6 +24,8 @@ const SECTIONS = [
   { key: 'chain', title: '产业链地图', en: 'Supply Chain', icon: '🗺️' },
   { key: 'market', title: '市场与趋势', en: 'Market & Trends', icon: '📈' },
   { key: 'history', title: '历史与演进', en: 'History', icon: '🕰️' },
+  { key: 'cases', title: '案例研究', en: 'Case Studies', icon: '🧪' },
+  { key: 'resources', title: '资源中心', en: 'Resources', icon: '📚' },
   { key: 'glossary', title: '术语词典', en: 'Glossary', icon: '📖' },
   { key: 'about', title: '关于本站', en: 'About', icon: 'ℹ️' },
 ];

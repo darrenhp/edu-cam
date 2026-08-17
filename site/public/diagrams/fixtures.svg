@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="340" fill="#f6f8fb"/>
+  <!-- 工作台 -->
+  <rect x="60" y="280" width="380" height="20" fill="#c2ccd8" stroke="#7c8ea3" stroke-width="2"/>
+  <!-- 工件 -->
+  <rect x="150" y="190" width="200" height="90" fill="#cdd9e6" stroke="#7c8ea3" stroke-width="2"/>
+  <text x="250" y="240" text-anchor="middle" font-size="14" fill="#33414f">工件</text>
+  <!-- 底面 3 点定位 -->
+  <g fill="#0f9d8a">
+    <circle cx="180" cy="282" r="5"/><circle cx="250" cy="282" r="5"/><circle cx="320" cy="282" r="5"/>
+  </g>
+  <text x="250" y="308" text-anchor="middle" font-size="12" fill="#0f9d8a">底面 3 点（限制 3 自由度）</text>
+  <!-- 侧面 2 点定位 -->
+  <g fill="#1f6feb">
+    <circle cx="148" cy="220" r="5"/><circle cx="148" cy="258" r="5"/>
+  </g>
+  <text x="120" y="200" text-anchor="middle" font-size="12" fill="#1f6feb">侧 2 点</text>
+  <!-- 端面 1 点定位 -->
+  <g fill="#9b59d0">
+    <circle cx="352" cy="235" r="5"/>
+  </g>
+  <text x="372" y="232" text-anchor="start" font-size="12" fill="#9b59d0">端 1 点</text>
+  <!-- 压板夹紧 -->
+  <g stroke="#e0742a" stroke-width="3" fill="none">
+    <line x1="170" y1="150" x2="170" y2="190"/>
+    <line x1="330" y1="150" x2="330" y2="190"/>
+  </g>
+  <rect x="158" y="138" width="24" height="14" rx="3" fill="#e0742a"/>
+  <rect x="318" y="138" width="24" height="14" rx="3" fill="#e0742a"/>
+  <text x="250" y="130" text-anchor="middle" font-size="13" fill="#e0742a">压板夹紧 (限制剩余自由度)</text>
+  <!-- 说明 -->
+  <text x="470" y="170" font-size="14" fill="#33414f">3-2-1 定位原理：</text>
+  <text x="470" y="196" font-size="13" fill="#6b7884">6 个支承点完全约束</text>
+  <text x="470" y="216" font-size="13" fill="#6b7884">工件 6 个自由度，</text>
+  <text x="470" y="236" font-size="13" fill="#6b7884">再夹紧防止加工中位移</text>
+  <text x="470" y="266" font-size="13" fill="#6b7884">基准统一 → 累积误差小</text>
+</svg>

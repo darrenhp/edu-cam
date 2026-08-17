@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="340" fill="#f6f8fb"/>
+  <!-- 微小工件 -->
+  <rect x="300" y="210" width="140" height="60" fill="#cdd9e6" stroke="#7c8ea3" stroke-width="2"/>
+  <text x="370" y="246" text-anchor="middle" font-size="13" fill="#33414f">微小零件</text>
+  <!-- 细长铣刀 -->
+  <g transform="translate(370,120)">
+    <rect x="-3" y="0" width="6" height="90" fill="#5b6b7b"/>
+    <path d="M-3 6 q3 8 0 16 q-3 8 0 16" fill="none" stroke="#39506b" stroke-width="1.5"/>
+    <path d="M3 6 q-3 8 0 16 q3 8 0 16" fill="none" stroke="#39506b" stroke-width="1.5"/>
+    <circle cx="0" cy="-6" r="5" fill="#1f6feb"/>
+    <text x="0" y="-18" text-anchor="middle" font-size="12" fill="#1450b0">Φ0.2 mm 微细铣刀</text>
+  </g>
+  <!-- 放大圈 -->
+  <circle cx="370" cy="210" r="34" fill="none" stroke="#9b59d0" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="404" y1="184" x2="470" y2="150" stroke="#9b59d0" stroke-width="1.5"/>
+  <text x="476" y="148" font-size="12" fill="#9b59d0">局部放大</text>
+  <!-- 比例尺 -->
+  <g stroke="#0f9d8a" stroke-width="2">
+    <line x1="120" y1="250" x2="220" y2="250"/>
+    <line x1="120" y1="245" x2="120" y2="255"/>
+    <line x1="220" y1="245" x2="220" y2="255"/>
+  </g>
+  <text x="170" y="270" text-anchor="middle" font-size="12" fill="#0f9d8a">0.1 mm 比例尺</text>
+  <!-- 说明 -->
+  <text x="470" y="190" font-size="14" fill="#33414f">微细加工特征：</text>
+  <text x="470" y="216" font-size="13" fill="#6b7884">• 刀具直径 &lt; 1 mm</text>
+  <text x="470" y="238" font-size="13" fill="#6b7884">• 微米级公差</text>
+  <text x="470" y="260" font-size="13" fill="#6b7884">• 高主轴转速、小切深</text>
+  <text x="470" y="290" font-size="13" fill="#6b7884">用于医疗/电子微小件</text>
+</svg>

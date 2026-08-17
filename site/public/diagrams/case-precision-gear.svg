@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="340" fill="#f6f8fb"/>
+  <!-- 齿轮 -->
+  <g transform="translate(120,170)">
+    <circle r="50" fill="#cdd9e6" stroke="#7c8ea3" stroke-width="2"/>
+    <circle r="16" fill="#f6f8fb" stroke="#7c8ea3" stroke-width="2"/>
+    <g fill="#cdd9e6" stroke="#7c8ea3" stroke-width="2">
+      <rect x="-8" y="-66" width="16" height="16"/><rect x="-8" y="50" width="16" height="16"/>
+      <rect x="50" y="-8" width="16" height="16"/><rect x="-66" y="-8" width="16" height="16"/>
+      <rect x="36" y="-54" width="16" height="16" transform="rotate(45 44 -46)"/>
+      <rect x="-52" y="38" width="16" height="16" transform="rotate(45 -44 46)"/>
+      <rect x="38" y="38" width="16" height="16" transform="rotate(45 46 46)"/>
+      <rect x="-54" y="-54" width="16" height="16" transform="rotate(45 -46 -46)"/>
+    </g>
+    <text x="0" y="78" font-size="12" fill="#33414f">精密齿轮</text>
+  </g>
+  <!-- 工艺路线 -->
+  <g font-size="12" fill="#33414f">
+    <rect x="300" y="55" width="160" height="40" rx="6" fill="#e6edf4" stroke="#7c8ea3"/>
+    <text x="380" y="79" text-anchor="middle">① 锻/车 坯</text>
+    <rect x="300" y="125" width="160" height="40" rx="6" fill="#e6edf4" stroke="#7c8ea3"/>
+    <text x="380" y="149" text-anchor="middle">② 滚齿/插齿</text>
+    <rect x="300" y="195" width="160" height="40" rx="6" fill="#e6edf4" stroke="#7c8ea3"/>
+    <text x="380" y="219" text-anchor="middle">③ 热处理 强化</text>
+    <rect x="300" y="265" width="160" height="40" rx="6" fill="#e6edf4" stroke="#7c8ea3"/>
+    <text x="380" y="289" text-anchor="middle">④ 磨齿 + 检测</text>
+  </g>
+  <g stroke="#0f9d8a" stroke-width="2" fill="none">
+    <line x1="380" y1="95" x2="380" y2="123"/>
+    <line x1="380" y1="165" x2="380" y2="193"/>
+    <line x1="380" y1="235" x2="380" y2="263"/>
+    <polygon points="380,123 376,115 384,115" fill="#0f9d8a"/>
+    <polygon points="380,193 376,185 384,185" fill="#0f9d8a"/>
+    <polygon points="380,263 376,255 384,255" fill="#0f9d8a"/>
+  </g>
+  <text x="500" y="165" font-size="12" fill="#6b7884">难点：齿形精度、</text>
+  <text x="500" y="185" font-size="12" fill="#6b7884">热处理变形补偿、</text>
+  <text x="500" y="205" font-size="12" fill="#6b7884">磨齿保等级</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" font-family="-apple-system, 'PingFang SC', sans-serif">
+  <rect width="680" height="340" fill="#f6f8fb"/>
+  <!-- 砂轮 -->
+  <g transform="translate(220,175)">
+    <circle r="70" fill="#c2ccd8" stroke="#7c8ea3" stroke-width="2"/>
+    <circle r="70" fill="none" stroke="#9aa7b4" stroke-width="1" stroke-dasharray="3 4"/>
+    <g fill="#5b6b7b">
+      <circle cx="0" cy="-66" r="3"/><circle cx="46" cy="-48" r="3"/><circle cx="66" cy="0" r="3"/>
+      <circle cx="46" cy="48" r="3"/><circle cx="0" cy="66" r="3"/><circle cx="-46" cy="48" r="3"/>
+      <circle cx="-66" cy="0" r="3"/><circle cx="-46" cy="-48" r="3"/>
+    </g>
+    <circle r="14" fill="#39506b"/>
+    <text x="0" y="100" text-anchor="middle" font-size="14" fill="#33414f">砂轮 (高速旋转)</text>
+  </g>
+  <!-- 旋转箭头 -->
+  <g stroke="#1f6feb" stroke-width="2" fill="none">
+    <path d="M220 95 a80 80 0 0 1 56 28" marker-end="url(#ah)"/>
+  </g>
+  <defs><marker id="ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#1f6feb"/></marker></defs>
+  <!-- 工件 -->
+  <rect x="90" y="250" width="320" height="46" fill="#cdd9e6" stroke="#7c8ea3" stroke-width="2"/>
+  <text x="250" y="278" text-anchor="middle" font-size="14" fill="#33414f">工件 (已淬硬钢)</text>
+  <!-- 接触火花 -->
+  <g stroke="#f0a93b" stroke-width="2">
+    <line x1="220" y1="246" x2="206" y2="232"/>
+    <line x1="220" y1="246" x2="214" y2="228"/>
+    <line x1="220" y1="246" x2="226" y2="230"/>
+    <line x1="220" y1="246" x2="234" y2="236"/>
+  </g>
+  <circle cx="220" cy="246" r="4" fill="#f0a93b"/>
+  <!-- 进给 -->
+  <g stroke="#0f9d8a" stroke-width="2" fill="#0f9d8a">
+    <line x1="300" y1="272" x2="340" y2="272"/>
+    <polygon points="340,272 332,268 332,276"/>
+    <text x="345" y="276" font-size="12" stroke="none">进给</text>
+  </g>
+  <!-- 说明 -->
+  <text x="450" y="150" font-size="14" fill="#33414f">原理：无数微小磨粒</text>
+  <text x="450" y="172" font-size="14" fill="#33414f">以极高线速度划擦工件</text>
+  <text x="450" y="194" font-size="14" fill="#33414f">表面，去除极薄余量</text>
+  <text x="450" y="226" font-size="13" fill="#6b7884">用于高精度、低粗糙度</text>
+  <text x="450" y="246" font-size="13" fill="#6b7884">的最终精加工工序</text>
+</svg>
