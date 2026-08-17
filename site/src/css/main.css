@@ -103,6 +103,8 @@ a:hover { text-decoration: underline; }
   gap: var(--sp-6); padding: var(--sp-6) var(--sp-5);
   align-items: start;
 }
+/* 无侧边栏页面（首页）在桌面端也应为单列，避免内容被挤进 250px 列 */
+.layout.no-sidebar { grid-template-columns: 1fr; }
 .side-nav {
   position: sticky; top: 80px;
   background: var(--c-surface); border: 1px solid var(--c-line);

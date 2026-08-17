@@ -191,7 +191,7 @@ function layout({ title, sectionKey, activeUrl, content, updated, sources, summa
     <button class="menu-toggle" aria-label="菜单" onclick="toggleMenu()">☰</button>
   </div>
 </header>
-<div class="layout">
+<div class="layout${includeSidebar ? '' : ' no-sidebar'}">
   ${sidebar}
   <main class="content" id="main">
     <div class="breadcrumb">${crumb}</div>
