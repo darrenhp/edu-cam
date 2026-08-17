@@ -142,7 +142,7 @@ function renderSectionIndex(section) {
     body += '_本板块内容整理中。_\n';
   } else {
     for (const p of sp) {
-      body += `## [${p.title}](${path.basename(p.url)})\n\n`;
+      body += `## [${p.title}](${p.url})\n\n`;
       if (p.summary) body += `${p.summary}\n\n`;
       if (p.updated) body += `_最近更新：${p.updated}_\n\n`;
     }
